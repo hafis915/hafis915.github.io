@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="Header">
+        <h1>Kuis Benar atau Salah Hari Kebalikan</h1>
+        <!-- <br> -->
+        <p>
+            CARA MAIN:
+        </p>
+        <p>Pada kuis benar atau salah ini anda dinyatakan benar disaat anda memilih jawaban yang salah, <br>atau kebalikan dari jawaban yang sebenarnya</p>
+    </div>
+
+    <div id ="info" class="text-center">
+        <h3>Nama:</h3>
+        <h3>Skor:</h3>
+        <h3 id="countdowntimer">Waktu: 5 detik</h3>
+    </div>
+
+    <div id="main-box">
+        <div class="pertanyaan">
+            <h2  id="soal" class="text-center">Pertanyaan :</h2>
+        </div>
+        <div class="jawaban">
+            <button id = "Benar" class="cta-button bold" >Benar</button>
+            <button id = "Salah" class="cta-button bold ">Salah</button>
+        </div>
+        <button id = "start" class="cta-button bold" >Mulai</button>
+        <div id= "mulai">
+        </div>
+    </div>
+    <div id="topup" class= "modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Waktu Habis</p>
+        </div>
+    </div>
+
+    <div id="topupSoal" class="modal">
+        <div class="modal-content">
+            <span class="closeSoal" >&times;</span>
+            <p id="soal-habis">Selamat anda telah menyelesaikan game dengan skor :</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
